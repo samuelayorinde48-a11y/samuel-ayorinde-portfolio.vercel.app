@@ -1,5 +1,3 @@
-Asset slots. Use these exact names.
-
 assets/portrait.webp      Hero portrait (added)
 assets/desk.webp          Hero small photo, about 900 x 700 (still needed)
 assets/about.webp         About photo, tall, about 1000 x 1250 (still needed)
