@@ -375,7 +375,7 @@ var h="";W.forEach(function(w,i){
 h+='<article class="work rv"><div class="info"><div class="num">0'+(i+1)+'</div><div class="tp">'+w.t+'</div><h3>'+w.n+'</h3><p class="d">'+w.d+'</p><dl><dt>Role</dt><dd>Strategy, UX, visual design</dd><dt>Status</dt><dd>Concept project</dd></dl><div class="tags">'+w.tg.map(function(x){return"<span>"+x+"</span>"}).join("")+'</div></div>'+
 '<div><div class="frame"><div class="fbar">Concept preview</div>'+
 '<div class="view"><div class="fake"><div class="h">'+w.n+'</div><div class="t" style="width:60%"></div><div class="t" style="width:40%"></div><div class="g"><div></div><div></div><div></div></div><div class="w"></div><div class="t" style="width:70%"></div><div class="g"><div></div><div></div><div></div></div><div class="w"></div><div class="t" style="width:50%"></div><div class="h" style="height:220px">Book a call</div></div>'+
-'<img src="'+w.f+'.webp" alt="Full length concept page for '+w.n+'" loading="lazy" style="display:none" onload="this.style.display=\'block\';this.previousSibling.style.display=\'none\'" onerror="this.remove()"></div>'+
+'<img src="'+w.f+'.webp" alt="Full length concept page for '+w.n+'" style="display:none" onload="this.style.display=\'block\';this.previousSibling.style.display=\'none\'" onerror="this.remove()"></div>'+
 '<div class="hint">Scroll inside the frame to read the full page. Hover to preview.</div></div></div></article>'});
 document.getElementById("rows").innerHTML=h;
 document.querySelectorAll(".view").forEach(function(v){var raf,go=false,t0,s0;function step(t){if(!go)return;var m=v.scrollHeight-v.clientHeight;if(v.scrollTop>=m-1){go=false;return}v.scrollTop=Math.min(m,s0+(t-t0)*0.06);raf=requestAnimationFrame(step)}
